@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employement in India</title>
+    <style>
+        h1 {
+            background-color: rgb(231, 188, 131);
+            color: rgb(211, 98, 81);
+            font-size: 2.6em;
+        }
+
+        p#Nandan {
+            font-size: 2.0em;
+        }
+
+        p#thanks {
+            font-size: 1.0em;
+            text-align: center;
+        }
+
+        img {
+            width: 10%;
+            height: 10%;
+        }
+
+        #btn {
+            width: 40%;
+            height: 12%;
+            font-size: 1.3rem;
+        }
+
+        #second {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="my-audio" src="./component/audio.mp3"></audio>
+    <center>
+        <img src="./component/image.webp" alt="Narendra modi">
+        <h1>Employement In India </h1>
+        <hr>
+        <Button id="btn">Click Here to get a Job</Button>
+    </center>
+    <div id="second">
+        <p id="thanks"> <b>Thankyou for watching</b> </p>
+        <p id="Nandan"> <strong>We'll <br> be <br> right <br> back </strong></p>
+        <hr>
+    </div>
+</body>
+<script>
+    let audio = document.getElementById("my-audio");
+    let btn = document.getElementById("btn");
+    let x = document.getElementById("second");
+
+
+    btn.addEventListener("click", () => {
+        // x.style.display === "none";
+        x.style.display = "block";
+        setInterval(function () { audio.play() }, 2000)
+
+    })
+
+</script>
+
+</html>
